@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clases - Gimnasio Fuerte+</title>
+  <link rel="stylesheet" href="../Css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+   <!-- ===== HEADER CON MEGA MENÚ ===== -->
+   <header class="header">
+    <nav class="nav">
+        <!-- Logo del sitio -->
+        <div class="logo">
+            <a href="index.html">Fusión Gym</a>
+        </div>
+
+        <!-- Menú de navegación principal -->
+        <ul class="menu-principal">
+            <li><a href="../index.html">Inicio</a></li>
+
+            <li><a href="entrenadores.html">Entrenadores</a></li>
+            <!-- Opción con mega-menú desplegable -->
+            <li class="mega-opcion">
+                <a href="#">Servicios ▾</a>
+
+                <!-- Mega-menú desplegable con subcategorías -->
+                <div class="mega-menu">
+                    <div class="mega-col">
+                        <h4>Clases</h4>
+                        <ul>
+                            <li><a href="clases.html#crossfit">CrossFit</a></li>
+                            <li><a href="clases.html#yoga">Yoga</a></li>
+                            <li><a href="clases.html#boxeo">Boxeo</a></li>
+                            <li><a href="clases.html">Ver mas</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-col">
+                        <h4>Precios</h4>
+                        <ul>
+                            <li><a href="precios.html#mensual">Mensual</a></li>
+                            <li><a href="precios.html#anual">Anual</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="filtro-clases">
+  <h1>Nuestras Clases</h1>
+
+  <!-- Contenedor principal que incluye inputs, labels y galería -->
+  <div class="contenedor-filtro">
+
+    <!-- Filtros por categoría -->
+    <div class="filtros">
+      <input type="radio" name="categoria" id="todas" checked>
+      <label for="todas">Todas</label>
+
+      <input type="radio" name="categoria" id="fuerza">
+      <label for="fuerza">Fuerza</label>
+
+      <input type="radio" name="categoria" id="cardio">
+      <label for="cardio">Cardio</label>
+
+      <input type="radio" name="categoria" id="yoga">
+      <label for="yoga">Yoga</label>
+    </div>
+
+    <!-- Galería de clases -->
+    <div class="galeria-clases">
+      <div class="clase fuerza">
+        <img src="../Content/img/FuerzaClases.jpg" alt="Clase de fuerza">
+        <div class="overlay">
+          <h3>Fuerza Total</h3>
+          <p>Construye músculo con pesas y entrenamiento funcional.</p>
+        </div>
+      </div>
+
+      <div class="clase cardio">
+        <img src="../Content/img/cardiohitt.jpeg" alt="Clase de cardio">
+        <div class="overlay">
+          <h3>Cardio HIIT</h3>
+          <p>Sesiones intensas para quemar grasa rápidamente.</p>
+        </div>
+      </div>
+
+      <div class="clase yoga">
+        <img src="../Content/img/YogaClases.jpeg" alt="Clase de yoga">
+        <div class="overlay">
+          <h3>Yoga Flow</h3>
+          <p>Relaja tu mente y fortalece tu cuerpo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- ===== HORARIOS SEMANALES ===== -->
+  <section class="horarios">
+    <h2>Horarios Semanales</h2>
+    <div class="tabla-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Clase</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Lunes</td><td>Musculación</td><td>8:00 - 9:00</td></tr>
+          <tr><td>Martes</td><td>CrossFit</td><td>10:00 - 11:00</td></tr>
+          <tr><td>Miércoles</td><td>Yoga</td><td>9:00 - 10:00</td></tr>
+          <tr><td>Jueves</td><td>CrossFit</td><td>10:00 - 11:00</td></tr>
+          <tr><td>Viernes</td><td>Musculación</td><td>8:00 - 9:00</td></tr>
+          <tr><td>Sábado</td><td>Spinning</td><td>10:00 - 11:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+    </section>
+
+    <!-- ===== PIE DE PÁGINA / FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-contenedor">
+          
+          <!-- Formulario de Newsletter -->
+          <div class="footer-newsletter">
+            <h3>Suscríbete a nuestra pagina</h3>
+            <form>
+              <input type="email" placeholder="Tu correo electrónico" required>
+              <button type="submit">Suscribirme</button>
+            </form>
+          </div>
+      
+          <!-- Redes Sociales -->
+          <div class="redes-sociales">
+            <h3>Síguenos</h3>
+            <div class="iconos-redes">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Créditos -->
+        <div class="footer-creditos">
+          <p>&copy; 2025 Gimnasio Fuerte+. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+</body>
+</html>

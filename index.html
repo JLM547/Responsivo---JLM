@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUST DO IT - GYM</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- ===== HEADER CON MEGA MENÚ ===== -->
+    <header class="header">
+
+        <nav class="nav">
+            <!-- Logo del sitio -->
+            <div class="logo">
+                <a href="index.html">Fusión Gym</a>
+            </div>
+
+            <!-- Menú de navegación principal -->
+            <ul class="menu-principal">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="Page/entrenadores.html">Entrenadores</a></li>
+                <!-- Opción con mega-menú desplegable -->
+                <li class="mega-opcion">
+                    <a href="#">Servicios ▾</a>
+
+                    <!-- Mega-menú desplegable con subcategorías -->
+                    <div class="mega-menu">
+                        <div class="mega-col">
+                            <h4>Clases</h4>
+                            <ul>
+                                <li><a href="Page/clases.html#crossfit">CrossFit</a></li>
+                                <li><a href="Page/clases.html#yoga">Yoga</a></li>
+                                <li><a href="Page/clases.html#boxeo">Boxeo</a></li>
+                                <li><a href="Page/clases.html">Ver mas</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-col">
+                            <h4>Precios</h4>
+                            <ul>
+                                <li><a href="Page/precios.html#mensual">Mensual</a></li>
+                                <li><a href="Page/precios.html#anual">Anual</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="Page/contacto.html">Contacto</a></li>
+                <li><a href="Page/blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== SECCIÓN HERO ===== -->
+    <section class="hero">
+        <!-- Video de fondo -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="Content/video/MotivacionHERO.webm" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+
+        <!-- Overlay con texto animado -->
+        <div class="hero-overlay">
+            <h1 class="hero-titulo">Transforma tu cuerpo</h1>
+            <p class="hero-subtitulo">Entrena con los mejores en Fusión Gym</p>
+        </div>
+    </section>
+
+    <!-- ===== SECCIÓN CLASES DESTACADAS ===== -->
+<section class="clases-destacadas">
+    <h2 class="titulo-seccion">Clases Destacadas</h2>
+    
+    <div class="tarjetas-clases">
+      <!-- Tarjeta 1 -->
+      <div class="tarjeta-clase">
+        <img src="Content/img/Crosfitt.webp" alt="Clase de CrossFit">
+        <div class="contenido-tarjeta">
+          <h3>CrossFit</h3>
+          <p>Entrenamiento de alta intensidad para mejorar fuerza y resistencia.</p>
+        </div>
+      </div>
+  
+      <!-- Tarjeta 2 -->
+      <div class="tarjeta-clase">
+        <img src="Content/img/YOGA.jpg" alt="Clase de Yoga">
+        <div class="contenido-tarjeta">
+          <h3>Yoga</h3>
+          <p>Conecta cuerpo y mente a través de la respiración y el movimiento.</p>
+        </div>
+      </div>
+  
+      <!-- Tarjeta 3 -->
+      <div class="tarjeta-clase">
+        <img src="Content/img/Boxeo.webp" alt="Clase de Boxeo">
+        <div class="contenido-tarjeta">
+          <h3>Boxeo</h3>
+          <p>Desarrolla técnica, coordinación y disciplina con entrenadores expertos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN CONTADOR ANIMADO ===== -->
+<section class="seccion-contador">
+    <div class="contenedor-contador">
+      <div class="contador">
+        <span class="numero" data-numero="500">500+</span>
+        <p>Socios Satisfechos</p>
+      </div>
+      <div class="contador">
+        <span class="numero" data-numero="25">25+</span>
+        <p>Clases Semanales</p>
+      </div>
+      <div class="contador">
+        <span class="numero" data-numero="10">10+</span>
+        <p>Entrenadores Expertos</p>
+      </div>
+    </div>
+  </section>  
+  
+  <!-- ===== CARRUSEL DE TESTIMONIOS ===== -->
+<section class="testimonios">
+    <h2>Testimonios</h2>
+    <div class="carrusel">
+      <input type="radio" name="slides" id="slide1" checked>
+      <input type="radio" name="slides" id="slide2">
+      <input type="radio" name="slides" id="slide3">
+  
+      <ul class="slides">
+        <li class="slide">
+          <blockquote>
+            <img src="Content/img/Testimonio!.jpg" alt="Clase de Yoga">
+            <p>"Gracias a este gimnasio, me siento más fuerte y seguro que nunca."</p>
+            <cite>– Pedro, 35 años</cite>
+          </blockquote>
+        </li>
+        <li class="slide">
+          <blockquote>
+            <p>"La mejor decisión que tomé fue comenzar aquí. ¡Recomendado 100%!"</p>
+            <cite>– Carla, 28 años</cite>
+          </blockquote>
+        </li>
+        <li class="slide">
+          <blockquote>
+            <p>"Entrenadores excelentes y un ambiente motivador. ¡Me encanta!"</p>
+            <cite>– Luis, 42 años</cite>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+  </section> 
+  
+  <!-- ===== PIE DE PÁGINA / FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-contenedor">
+      
+      <!-- Formulario de Newsletter -->
+      <div class="footer-newsletter">
+        <h3>Suscríbete a nuestra pagina</h3>
+        <form>
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirme</button>
+        </form>
+      </div>
+  
+      <!-- Redes Sociales -->
+      <div class="redes-sociales">
+        <h3>Síguenos</h3>
+        <div class="iconos-redes">
+          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+  
+      <!-- Mapa de Google Maps -->
+      <div class="footer-mapa">
+        <h3>Encuéntranos</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0028763075763!2d-122.41941508468125!3d37.77492977975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064cb60d833%3A0x88f0a1a5a637cf0b!2sSan%20Francisco!5e0!3m2!1ses-419!2sus!4v1618364747071!5m2!1ses-419!2sus" 
+          width="100%" 
+          height="200" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+  
+    </div>
+  
+    <!-- Créditos -->
+    <div class="footer-creditos">
+      <p>&copy; 2025 Gimnasio Fuerte+. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

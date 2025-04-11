@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenadores - Gimnasio Fuerte+</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"       integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- ===== HEADER CON MEGA MENÚ ===== -->
+    <header class="header">
+        <nav class="nav">
+            <!-- Logo del sitio -->
+            <div class="logo">
+                <a href="index.html">Fusión Gym</a>
+            </div>
+
+            <!-- Menú de navegación principal -->
+            <ul class="menu-principal">
+                <li><a href="../index.html">Inicio</a></li>
+
+                <li><a href="entrenadores.html">Entrenadores</a></li>
+                <!-- Opción con mega-menú desplegable -->
+                <li class="mega-opcion">
+                    <a href="#">Servicios ▾</a>
+
+                    <!-- Mega-menú desplegable con subcategorías -->
+                    <div class="mega-menu">
+                        <div class="mega-col">
+                            <h4>Clases</h4>
+                            <ul>
+                                <li><a href="clases.html#crossfit">CrossFit</a></li>
+                                <li><a href="clases.html#yoga">Yoga</a></li>
+                                <li><a href="clases.html#boxeo">Boxeo</a></li>
+                                <li><a href="clases.html">Ver mas</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-col">
+                            <h4>Precios</h4>
+                            <ul>
+                                <li><a href="precios.html#mensual">Mensual</a></li>
+                                <li><a href="precios.html#anual">Anual</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="precios">
+        <h1>Compará Nuestros Planes</h1>
+      
+        <!-- El input va aquí, ANTES de .planes-grid -->
+        <input type="checkbox" id="plan-toggle" hidden>
+      
+        <!-- Toggle mensual/anual -->
+        <div class="toggle-container">
+          <span>Mensual</span>
+          <label class="switch" for="plan-toggle">
+            <span class="slider"></span>
+          </label>
+          <span>Anual</span>
+        </div>
+      
+        <!-- Planes -->
+        <div class="planes-grid">
+          <!-- Plan Básico -->
+          <div class="plan-card">
+            <h3>Básico</h3>
+            <p class="precio mensual">$25/mes</p>
+            <p class="precio anual">$240/año</p>
+            <ul>
+              <li>Acceso al gimnasio</li>
+              <li class="tooltip">Clases grupales
+                <span class="tooltip-text">Incluye yoga, funcional y cardio</span>
+              </li>
+              <li>Locker individual</li>
+            </ul>
+            <button>Elegir</button>
+          </div>
+      
+          <!-- Plan Pro -->
+          <div class="plan-card destacado">
+            <h3>Pro</h3>
+            <p class="precio mensual">$40/mes</p>
+            <p class="precio anual">$400/año</p>
+            <ul>
+              <li>Todo en Básico</li>
+              <li class="tooltip">Entrenador personalizado
+                <span class="tooltip-text">1 sesión semanal incluida</span>
+              </li>
+              <li>Plan nutricional</li>
+            </ul>
+            <button>Elegir</button>
+          </div>
+      
+          <!-- Plan Ilimitado -->
+          <div class="plan-card">
+            <h3>Ilimitado</h3>
+            <p class="precio mensual">$60/mes</p>
+            <p class="precio anual">$600/año</p>
+            <ul>
+              <li>Todo en Pro</li>
+              <li>Acceso 24/7</li>
+              <li class="tooltip">Clases ilimitadas
+                <span class="tooltip-text">Incluye HIIT, box, pilates, etc.</span>
+              </li>
+            </ul>
+            <button>Elegir</button>
+          </div>
+        </div>
+      </section>
+      
+    <footer class="footer">
+        <div class="footer-contenedor">
+
+            <!-- Formulario de Newsletter -->
+            <div class="footer-newsletter">
+                <h3>Suscríbete a nuestra pagina</h3>
+                <form>
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirme</button>
+                </form>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="redes-sociales">
+                <h3>Síguenos</h3>
+                <div class="iconos-redes">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Créditos -->
+        <div class="footer-creditos">
+            <p>&copy; 2025 Gimnasio Fuerte+. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

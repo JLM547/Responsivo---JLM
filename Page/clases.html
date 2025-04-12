@@ -58,25 +58,21 @@
 <section class="filtro-clases">
   <h1>Nuestras Clases</h1>
 
-  <!-- Contenedor principal que incluye inputs, labels y galería -->
   <div class="contenedor-filtro">
+    <!-- Mueve los inputs arriba para que estén antes de la galería -->
+    <input type="radio" name="categoria" id="todas" checked>
+    <input type="radio" name="categoria" id="fuerza">
+    <input type="radio" name="categoria" id="cardio">
+    <input type="radio" name="categoria" id="yoga">
 
-    <!-- Filtros por categoría -->
     <div class="filtros">
-      <input type="radio" name="categoria" id="todas" checked>
       <label for="todas">Todas</label>
-
-      <input type="radio" name="categoria" id="fuerza">
       <label for="fuerza">Fuerza</label>
-
-      <input type="radio" name="categoria" id="cardio">
       <label for="cardio">Cardio</label>
-
-      <input type="radio" name="categoria" id="yoga">
       <label for="yoga">Yoga</label>
     </div>
 
-    <!-- Galería de clases -->
+    <!-- Galería -->
     <div class="galeria-clases">
       <div class="clase fuerza">
         <img src="../Content/img/FuerzaClases.jpg" alt="Clase de fuerza">
@@ -85,7 +81,6 @@
           <p>Construye músculo con pesas y entrenamiento funcional.</p>
         </div>
       </div>
-
       <div class="clase cardio">
         <img src="../Content/img/cardiohitt.jpeg" alt="Clase de cardio">
         <div class="overlay">
@@ -93,7 +88,6 @@
           <p>Sesiones intensas para quemar grasa rápidamente.</p>
         </div>
       </div>
-
       <div class="clase yoga">
         <img src="../Content/img/YogaClases.jpeg" alt="Clase de yoga">
         <div class="overlay">
@@ -104,6 +98,7 @@
     </div>
   </div>
 </section>
+
 
   <!-- ===== HORARIOS SEMANALES ===== -->
   <section class="horarios">

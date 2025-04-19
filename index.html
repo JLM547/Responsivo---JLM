@@ -2,205 +2,292 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JUST DO IT - GYM</title>
-    <link rel="stylesheet" href="Css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio FitLife</title>
+  <link rel="website icon" type="png" href="Content/img/IconWebSite.png">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icon libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@here-icons/all/css/here-icons.min.css" rel="stylesheet">
+
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="Css/Style.css">
 </head>
 
 <body>
 
-    <!-- ===== HEADER CON MEGA MENÚ ===== -->
-    <header class="header">
+  <!-- ========== Header con Mega Menú ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-negro py-3" role="navigation">
+    <div class="container">
+      <a class="navbar-brand text-verde-lima fw-bold" href="#">Gimnasio FitLife</a>
 
-        <nav class="nav">
-            <!-- Logo del sitio -->
-            <div class="logo">
-                <a href="index.html">Fusión Gym</a>
-            </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMega"
+        aria-controls="navbarMega" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <!-- Menú de navegación principal -->
-            <ul class="menu-principal">
-                <li><a href="index.html">Inicio</a></li>
-
-                <li><a href="Page/entrenadores.html">Entrenadores</a></li>
-                <!-- Opción con mega-menú desplegable -->
-                <li class="mega-opcion">
-                    <a href="#">Servicios ▾</a>
-
-                    <!-- Mega-menú desplegable con subcategorías -->
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>Clases</h4>
-                            <ul>
-                                <li><a href="Page/clases.html#crossfit">CrossFit</a></li>
-                                <li><a href="Page/clases.html#yoga">Yoga</a></li>
-                                <li><a href="Page/clases.html#boxeo">Boxeo</a></li>
-                                <li><a href="Page/clases.html">Ver mas</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>Precios</h4>
-                            <ul>
-                                <li><a href="Page/precios.html#mensual">Mensual</a></li>
-                                <li><a href="Page/precios.html#anual">Anual</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <li><a href="Page/contacto.html">Contacto</a></li>
-                <li><a href="Page/blog.html">Blog</a></li>
+      <div class="collapse navbar-collapse" id="navbarMega">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-gris-claro" href="#" id="megaDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Clases
+            </a>
+            <ul class="dropdown-menu mega-menu bg-gris-oscuro border-0 p-4 mt-2 shadow" aria-labelledby="megaDropdown">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6 class="text-verde-lima">Destacadas Del Mes</h6>
+                  <a class="dropdown-item text-gris-claro" href="Page/clases.html">Funcional</a>
+                  <a class="dropdown-item text-gris-claro" href="Page/clases.html">Crossfit</a>
+                  <a class="dropdown-item text-gris-claro" href="Page/clases.html">Boxeo</a>
+                  <a class="dropdown-item text-gris-claro" href="Page/clases.html">Ver mas</a>
+                </div>
+                <div class="col-md-4">
+                  <h6 class="text-verde-lima">Precios</h6>
+                  <a class="dropdown-item text-gris-claro" href="#">Anual</a>
+                  <a class="dropdown-item text-gris-claro" href="#">Mensual</a>
+                  <a class="dropdown-item text-gris-claro" href="Page/Precios.html">Ver mas</a>
+                </div>
+              </div>
             </ul>
-        </nav>
-    </header>
-
-    <!-- ===== SECCIÓN HERO ===== -->
-    <section class="hero">
-        <!-- Video de fondo -->
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="Content/video/MotivacionHERO.webm" type="video/mp4">
-            Tu navegador no soporta videos HTML5.
-        </video>
-
-        <!-- Overlay con texto animado -->
-        <div class="hero-overlay">
-            <h1 class="hero-titulo">Transforma tu cuerpo</h1>
-            <p class="hero-subtitulo">Entrena con los mejores en Fusión Gym</p>
-        </div>
-    </section>
-
-    <!-- ===== SECCIÓN CLASES DESTACADAS ===== -->
-<section class="clases-destacadas">
-    <h2 class="titulo-seccion">Clases Destacadas</h2>
-    
-    <div class="tarjetas-clases">
-      <!-- Tarjeta 1 -->
-      <div class="tarjeta-clase">
-        <img src="Content/img/Crosfitt.webp" alt="Clase de CrossFit">
-        <div class="contenido-tarjeta">
-          <h3>CrossFit</h3>
-          <p>Entrenamiento de alta intensidad para mejorar fuerza y resistencia.</p>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-gris-claro" href="Page/entrenadores.html">Entrenadores</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-gris-claro" href="Page/Blog.html">Blog Fitness</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-gris-claro" href="Page/Contacto.html">Contacto</a>
+          </li>
+        </ul>
       </div>
-  
-      <!-- Tarjeta 2 -->
-      <div class="tarjeta-clase">
-        <img src="Content/img/YOGA.jpg" alt="Clase de Yoga">
-        <div class="contenido-tarjeta">
-          <h3>Yoga</h3>
-          <p>Conecta cuerpo y mente a través de la respiración y el movimiento.</p>
+    </div>
+  </nav>
+
+
+  <!-- ========== Hero con video de fondo ========== -->
+  <section id="hero" class="position-relative overflow-hidden" role="region" aria-label="Sección de bienvenida">
+    <!-- Video de fondo -->
+    <video class="w-100 position-absolute top-0 start-0" autoplay muted loop playsinline>
+      <source src="Content/video/hero.mp4" type="video/mp4">
+      Tu navegador no soporta videos en HTML5.
+    </video>
+
+    <!-- Capa oscura encima del video -->
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+    <!-- Contenido centrado -->
+    <div
+      class="hero-content position-relative text-center text-white d-flex flex-column justify-content-center align-items-center vh-100">
+      <h1 class="display-3 fw-bold mb-3 hero-title">Entrená con nosotros</h1>
+      <p class="lead mb-4 hero-subtitle">Clases, bienestar y comunidad en un solo lugar</p>
+      <a href="#clases" class="btn btn-acento btn-lg">Ver Clases</a>
+    </div>
+  </section>
+
+  <!-- ========== Sección de Clases Destacadas ========== -->
+  <section id="clases" class="py-5 bg-gris-medio text-gris-claro" aria-label="Clases destacadas">
+    <div class="container">
+      <h2 class="text-center text-verde-lima mb-5">Clases Destacadas</h2>
+
+      <div class="row g-4">
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4">
+          <div class="card clase-card h-100">
+            <img src="Content/img/funcional.jpg" class="card-img-top" alt="Clase de Funcional">
+            <div class="card-body">
+              <h5 class="card-title text-verde-lima">Funcional</h5>
+              <p class="card-text">Entrenamiento completo para fuerza, coordinación y resistencia.</p>
+            </div>
+          </div>
         </div>
-      </div>
-  
-      <!-- Tarjeta 3 -->
-      <div class="tarjeta-clase">
-        <img src="Content/img/Boxeo.webp" alt="Clase de Boxeo">
-        <div class="contenido-tarjeta">
-          <h3>Boxeo</h3>
-          <p>Desarrolla técnica, coordinación y disciplina con entrenadores expertos.</p>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4">
+          <div class="card clase-card h-100">
+            <img src="Content/img/Crosfitt.webp" class="card-img-top" alt="Clase de Crossfit">
+            <div class="card-body">
+              <h5 class="card-title text-verde-lima">Crossfit</h5>
+              <p class="card-text">Alta intensidad con movimientos funcionales variados.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4">
+          <div class="card clase-card h-100">
+            <img src="Content/img/Boxeo.webp" class="card-img-top" alt="Clase de Boxeo">
+            <div class="card-body">
+              <h5 class="card-title text-verde-lima">Boxeo</h5>
+              <p class="card-text">Técnica, cardio y fuerza en una sola clase.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SECCIÓN CONTADOR ANIMADO ===== -->
-<section class="seccion-contador">
-    <div class="contenedor-contador">
-      <div class="contador">
-        <span class="numero" data-numero="500">500+</span>
-        <p>Socios Satisfechos</p>
-      </div>
-      <div class="contador">
-        <span class="numero" data-numero="25">25+</span>
-        <p>Clases Semanales</p>
-      </div>
-      <div class="contador">
-        <span class="numero" data-numero="10">10+</span>
-        <p>Entrenadores Expertos</p>
-      </div>
-    </div>
-  </section>  
-  
-  <!-- ===== CARRUSEL DE TESTIMONIOS ===== -->
-<section class="testimonios">
-    <h2>Testimonios</h2>
-    <div class="carrusel">
-      <input type="radio" name="slides" id="slide1" checked>
-      <input type="radio" name="slides" id="slide2">
-      <input type="radio" name="slides" id="slide3">
-  
-      <ul class="slides">
-        <li class="slide">
-          <blockquote>
-            <img src="Content/img/Testimonio!.jpg">
-            <p>"Gracias a este gimnasio, me siento más fuerte y seguro que nunca."</p>
-            <cite>– Pedro, 35 años</cite>
-          </blockquote>
-        </li>
-        <li class="slide">
-          <blockquote>
-            <img src="Content/img/Testimonio2.jpg" width="600" height="375">
-            <p>"La mejor decisión que tomé fue comenzar aquí. ¡Recomendado 100%!"</p>
-            <cite>– Carla, 28 años</cite>
-          </blockquote>
-        </li>
-        <li class="slide">
-          <blockquote>
-            <img src="Content/img/Testimonio3.avif" width="600" height="600">
-            <p>"Entrenadores excelentes y un ambiente motivador. ¡Me encanta!"</p>
-            <cite>– Luis, 42 años</cite>
-          </blockquote>
-        </li>
-      </ul>
-    </div>
-  </section> 
-  
-  <!-- ===== PIE DE PÁGINA / FOOTER ===== -->
-<footer class="footer">
-    <div class="footer-contenedor">
-      
-      <!-- Formulario de Newsletter -->
-      <div class="footer-newsletter">
-        <h3>Suscríbete a nuestra pagina</h3>
-        <form>
-          <input type="email" placeholder="Tu correo electrónico" required>
-          <button type="submit">Suscribirme</button>
-        </form>
-      </div>
-  
-      <!-- Redes Sociales -->
-      <div class="redes-sociales">
-        <h3>Síguenos</h3>
-        <div class="iconos-redes">
-          <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+  <!-- ========== Sección de Contadores con Íconos ========== -->
+  <section id="estadisticas" class="py-5 bg-negro text-gris-claro text-center" aria-label="Estadísticas del gimnasio">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Contador 1 -->
+        <div class="col-md-3">
+          <div class="contador-box">
+            <i class="fas fa-users fa-2x text-verde-lima mb-2"></i>
+            <div class="numero display-4 fw-bold text-verde-lima" data-contar="1200">0</div>
+            <p class="mt-2">Alumnos Activos</p>
+          </div>
         </div>
+
+        <!-- Contador 2 -->
+        <div class="col-md-3">
+          <div class="contador-box">
+            <i class="fas fa-dumbbell fa-2x text-verde-lima mb-2"></i>
+            <div class="numero display-4 fw-bold text-verde-lima" data-contar="85">0</div>
+            <p class="mt-2">Clases Semanales</p>
+          </div>
+        </div>
+
+        <!-- Contador 3 -->
+        <div class="col-md-3">
+          <div class="contador-box">
+            <i class="fas fa-user-tie fa-2x text-verde-lima mb-2"></i>
+            <div class="numero display-4 fw-bold text-verde-lima" data-contar="12">0</div>
+            <p class="mt-2">Entrenadores</p>
+          </div>
+        </div>
+
+        <!-- Contador 4 -->
+        <div class="col-md-3">
+          <div class="contador-box">
+            <i class="fas fa-calendar-check fa-2x text-verde-lima mb-2"></i>
+            <div class="numero display-4 fw-bold text-verde-lima" data-contar="10">0</div>
+            <p class="mt-2">Años de Experiencia</p>
+          </div>
+        </div>
+
       </div>
-  
-      <!-- Mapa de Google Maps -->
-      <div class="footer-mapa">
-        <h3>Encuéntranos</h3>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0028763075763!2d-122.41941508468125!3d37.77492977975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064cb60d833%3A0x88f0a1a5a637cf0b!2sSan%20Francisco!5e0!3m2!1ses-419!2sus!4v1618364747071!5m2!1ses-419!2sus" 
-          width="100%" 
-          height="200" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy">
-        </iframe>
-      </div>
-  
     </div>
-  
-    <!-- Créditos -->
-    <div class="footer-creditos">
-      <p>&copy; 2025 Gimnasio Fuerte+. Todos los derechos reservados.</p>
+  </section>
+
+  <!-- ========== Sección de Testimonios ========== -->
+  <section id="testimonios" class="py-5 bg-gris-muy-claro text-negro" aria-label="Testimonios de alumnos">
+    <div class="container">
+      <h2 class="text-center text-verde-lima mb-5">Lo que dicen nuestros alumnos</h2>
+
+      <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <!-- Testimonio 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="Content/img/Testimonio1.webp" class="rounded-circle mb-3" alt="Testimonio 1" width="100"
+                height="100">
+              <p class="fw-bold text-verde-lima">“El mejor gimnasio que he probado, los entrenadores son increíbles.”</p>
+              <h5 class="fw-bold text-verde-lima">María López</h5>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="Content/img/Testimonio2.jpeg" class="rounded-circle mb-3" alt="Testimonio 2" width="100"
+                height="100">
+              <p class="fw-bold text-verde-lima">“Clases dinámicas, instalaciones impecables y excelente ambiente.”</p>
+              <h5 class="fw-bold text-verde-lima">Carlos Méndez</h5>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="carousel-item">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="Content/img/Testimonio3.webp" class="rounded-circle mb-3" alt="Testimonio 3" width="100"
+                height="100">
+              <p class="fw-bold text-verde-lima">“Entrenar aquí me cambió la vida. Lo recomiendo a todos.”</p>
+              <h5 class="fw-bold text-verde-lima">Ana Torres</h5>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-verde-lima rounded-circle p-2" aria-hidden="true"></span>
+          <span class="fw-bold text-verde-lima">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-verde-lima rounded-circle p-2" aria-hidden="true"></span>
+          <span class="fw-bold text-verde-lima">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="bg-azul-oscuro text-gris-claro pt-5 pb-4" aria-label="Pie de página del gimnasio">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Contacto -->
+        <div class="col-md-6">
+          <h5 class="text-verde-lima mb-3">Contacto</h5>
+          <form id="formContacto" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Ingresá un correo válido.</div>
+            </div>
+            <button type="submit" class="btn btn-verde-lima text-negro" id="btnEnviar">
+              Enviar <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-md-6">
+          <h5 class="text-verde-lima mb-3">Ubicación</h5>
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4800164061124!2d-65.30530308472334!3d-24.18578628437281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b1e99f89ad42f%3A0x63f4fba4748ccbe9!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1713540031822!5m2!1ses-419!2sar"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación del gimnasio en San Salvador de Jujuy">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="bg-verde-lima my-4">
+
+      <!-- Redes -->
+      <div class="text-center">
+        <a href="https://www.facebook.com" class="text-verde-lima me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://www.instagram.com" class="text-verde-lima me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-verde-lima"><i class="fab fa-whatsapp fa-lg"></i></a>
+      </div>
+
+      <p class="text-center mt-3 mb-0 small">© 2025 Gimnasio FitLife. Todos los derechos reservados.</p>
     </div>
   </footer>
-  
+
+  <!-- Scripts al final del body -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

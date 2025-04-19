@@ -3,186 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Entrenadores - Gimnasio Fuerte+</title>
-  <link rel="stylesheet" href="../Css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Gimnasio FitLife</title>
+  <link rel="website icon" type="png" href="Content/img/IconWebSite.png">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Icon libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@here-icons/all/css/here-icons.min.css" rel="stylesheet">
+
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="../Css/Style.css">
 </head>
 <body>
 
-    <!-- ===== HEADER CON MEGA MENÚ ===== -->
-    <header class="header">
-        <nav class="nav">
-            <!-- Logo del sitio -->
-            <div class="logo">
-                <a href="index.html">Fusión Gym</a>
+<!-- ========== Header con Mega Menú ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-negro py-3" role="navigation">
+  <div class="container">
+    <a class="navbar-brand text-verde-lima fw-bold" href="../index.html">Gimnasio FitLife</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMega" aria-controls="navbarMega" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMega">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-gris-claro" href="#" id="megaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Clases
+          </a>
+          <ul class="dropdown-menu mega-menu bg-gris-oscuro border-0 p-4 mt-2 shadow" aria-labelledby="megaDropdown">
+            <div class="row">
+              <div class="col-md-4">
+                <h6 class="text-verde-lima">Destacadas Del Mes</h6>
+                <a class="dropdown-item text-gris-claro" href="clases.html">Funcional</a>
+                <a class="dropdown-item text-gris-claro" href="clases.html">Crossfit</a>
+                <a class="dropdown-item text-gris-claro" href="clases.html">Boxeo</a>
+                <a class="dropdown-item text-gris-claro" href="clases.html">Ver mas</a>
+              </div>
+              <div class="col-md-4">
+                <h6 class="text-verde-lima">Precios</h6>
+                <a class="dropdown-item text-gris-claro" href="Precios.html">Anual</a>
+                <a class="dropdown-item text-gris-claro" href="Precios.html">Mensual</a>
+                <a class="dropdown-item text-gris-claro" href="Precios.html">Ver mas</a>
+              </div>
             </div>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gris-claro" href="#">Entrenadores</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-gris-claro" href="Blog.html">Blog Fitness</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link text-gris-claro" href="Contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-            <!-- Menú de navegación principal -->
-            <ul class="menu-principal">
-                <li><a href="../index.html">Inicio</a></li>
-
-                <li><a href="entrenadores.html">Entrenadores</a></li>
-                <!-- Opción con mega-menú desplegable -->
-                <li class="mega-opcion">
-                    <a href="#">Servicios ▾</a>
-
-                    <!-- Mega-menú desplegable con subcategorías -->
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>Clases</h4>
-                            <ul>
-                                <li><a href="clases.html#crossfit">CrossFit</a></li>
-                                <li><a href="clases.html#yoga">Yoga</a></li>
-                                <li><a href="clases.html#boxeo">Boxeo</a></li>
-                                <li><a href="clases.html">Ver mas</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>Precios</h4>
-                            <ul>
-                                <li><a href="precios.html#mensual">Mensual</a></li>
-                                <li><a href="precios.html#anual">Anual</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-
-<!-- ===== SECCIÓN DE ENTRENADORES ===== -->
+<!-- ========== Sección de Entrenadores ========== -->
 <section class="entrenadores">
-  <h1>Nuestros Entrenadores</h1>
-  <div class="entrenadores-grid">
-
-    <div class="entrenadores-grid">
-
-      <!-- Entrenador 1 -->
-      <div class="card-entrenador">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="../Content/img/Esp-Fuerza.webp" alt="Entrenador Pedro">
-            <h3>Pedro Ramírez</h3>
-          </div>
-          <div class="card-back">
-            <h3>Pedro Ramírez</h3>
-            <p>Especialista en fuerza y resistencia</p>
-            <p>10 años de experiencia en entrenamiento personalizado y alto rendimiento.</p>
-    
-            <div class="habilidades">
-              <p>Fuerza</p>
-              <div class="barra"><div style="--target: 90%;"></div></div>
-              <p>Resistencia</p>
-              <div class="barra"><div style="--target: 85%;"></div></div>
+    <h1 class="bg-gris-oscuro text-center text-verde-lima">Nuestros Entrenadores</h1>
+    <div class="bg-gris-oscuro entrenadores-grid">
+  
+      <div class="entrenadores-grid">
+  
+        <!-- Entrenador 1 -->
+        <div class="card-entrenador">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../Content/img/Entrenador1.webp" alt="Entrenador Pedro">
+              <h3>Pedro Ramírez</h3>
             </div>
-    
-            <div class="rating">
-              <input type="radio" id="star5-pedro" name="rating-pedro" /><label for="star5-pedro">★</label>
-              <input type="radio" id="star4-pedro" name="rating-pedro" /><label for="star4-pedro">★</label>
-              <input type="radio" id="star3-pedro" name="rating-pedro" /><label for="star3-pedro">★</label>
-              <input type="radio" id="star2-pedro" name="rating-pedro" /><label for="star2-pedro">★</label>
-              <input type="radio" id="star1-pedro" name="rating-pedro" /><label for="star1-pedro">★</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <!-- Entrenadora 2 -->
-      <div class="card-entrenador">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="../Content/img/EntrenadoraHITT.avif" alt="Entrenadora Carla">
-            <h3>Carla Díaz</h3>
-          </div>
-          <div class="card-back">
-            <h3>Carla Díaz</h3>
-            <p>Entrenadora de HIIT y cardio</p>
-            <p>Coach motivacional y experta en transformación física.</p>
-    
-            <div class="habilidades">
-              <p>Cardio</p>
-              <div class="barra"><div style="--target: 88%;"></div></div>
-              <p>Motivación</p>
-              <div class="barra"><div style="--target: 95%;"></div></div>
-            </div>
-    
-            <div class="rating">
-              <input type="radio" id="star5-carla" name="rating-carla" /><label for="star5-carla">★</label>
-              <input type="radio" id="star4-carla" name="rating-carla" /><label for="star4-carla">★</label>
-              <input type="radio" id="star3-carla" name="rating-carla" /><label for="star3-carla">★</label>
-              <input type="radio" id="star2-carla" name="rating-carla" /><label for="star2-carla">★</label>
-              <input type="radio" id="star1-carla" name="rating-carla" /><label for="star1-carla">★</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <!-- Entrenador 3 -->
-      <div class="card-entrenador">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="../Content/img/EntrenadorCrossFit.jpg" alt="Entrenador Luis">
-            <h3>Luis Gómez</h3>
-          </div>
-          <div class="card-back">
-            <h3>Luis Gómez</h3>
-            <p>CrossFit y calistenia</p>
-            <p>Certificado internacional, trabaja con principiantes y atletas avanzados.</p>
-    
-            <div class="habilidades">
-              <p>CrossFit</p>
-              <div class="barra"><div style="--target: 92%;"></div></div>
-              <p>Calistenia</p>
-              <div class="barra"><div style="--target: 87%;"></div></div>
-            </div>
-    
-            <div class="rating">
-              <input type="radio" id="star5-luis" name="rating-luis" /><label for="star5-luis">★</label>
-              <input type="radio" id="star4-luis" name="rating-luis" /><label for="star4-luis">★</label>
-              <input type="radio" id="star3-luis" name="rating-luis" /><label for="star3-luis">★</label>
-              <input type="radio" id="star2-luis" name="rating-luis" /><label for="star2-luis">★</label>
-              <input type="radio" id="star1-luis" name="rating-luis" /><label for="star1-luis">★</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-</section>
-
-    <!-- ===== PIE DE PÁGINA / FOOTER ===== -->
-<footer class="footer">
-    <div class="footer-contenedor">
+            <div class="card-back">
+              <h3>Pedro Ramírez</h3>
+              <p>Especialista en fuerza y resistencia</p>
+              <p>10 años de experiencia en entrenamiento personalizado y alto rendimiento.</p>
       
-      <!-- Formulario de Newsletter -->
-      <div class="footer-newsletter">
-        <h3>Suscríbete a nuestra pagina</h3>
-        <form>
-          <input type="email" placeholder="Tu correo electrónico" required>
-          <button type="submit">Suscribirme</button>
-        </form>
-      </div>
-  
-      <!-- Redes Sociales -->
-      <div class="redes-sociales">
-        <h3>Síguenos</h3>
-        <div class="iconos-redes">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <div class="habilidades">
+                <p>Fuerza</p>
+                <div class="barra"><div style="--target: 90%;"></div></div>
+                <p>Resistencia</p>
+                <div class="barra"><div style="--target: 85%;"></div></div>
+              </div>
+      
+              <div class="rating" data-entrenador="pedro">
+                <span class="star" data-value="5">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="1">★</span>
+              </div>              
+            </div>
+          </div>
+        </div>
+      
+        <!-- Entrenadora 2 -->
+        <div class="card-entrenador">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../Content/img/EntrenadoraHITT.avif" alt="Entrenadora Carla">
+              <h3>Carla Díaz</h3>
+            </div>
+            <div class="card-back">
+              <h3>Carla Díaz</h3>
+              <p>Entrenadora de HIIT y cardio</p>
+              <p>Coach motivacional y experta en transformación física.</p>
+      
+              <div class="habilidades">
+                <p>Cardio</p>
+                <div class="barra"><div style="--target: 88%;"></div></div>
+                <p>Motivación</p>
+                <div class="barra"><div style="--target: 95%;"></div></div>
+              </div>
+      
+              <div class="rating" data-entrenador="Carla">
+                <span class="star" data-value="5">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="1">★</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      
+        <!-- Entrenador 3 -->
+        <div class="card-entrenador">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="../Content/img/EntrenadorCrossFit.jpg" alt="Entrenador Luis">
+              <h3>Luis Gómez</h3>
+            </div>
+            <div class="card-back">
+              <h3>Luis Gómez</h3>
+              <p>CrossFit y calistenia</p>
+              <p>Certificado internacional, trabaja con principiantes y atletas avanzados.</p>
+      
+              <div class="habilidades">
+                <p>CrossFit</p>
+                <div class="barra"><div style="--target: 92%;"></div></div>
+                <p>Calistenia</p>
+                <div class="barra"><div style="--target: 87%;"></div></div>
+              </div>
+      
+              <div class="rating" data-entrenador="Luis">
+                <span class="star" data-value="5">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="1">★</span>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+  </section>
+
+<!-- ========== Footer ========== -->
+<footer class="bg-azul-oscuro text-gris-claro pt-5 pb-4" aria-label="Pie de página del gimnasio">
+    <div class="container">
+      <div class="row g-4">
   
-    <!-- Créditos -->
-    <div class="footer-creditos">
-      <p>&copy; 2025 Gimnasio Fuerte+. Todos los derechos reservados.</p>
+        <!-- Contacto -->
+        <div class="col-md-6">
+          <h5 class="text-verde-lima mb-3">Contacto</h5>
+          <form id="formContacto" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Ingresá un correo válido.</div>
+            </div>
+            <button type="submit" class="btn btn-verde-lima text-negro" id="btnEnviar">
+              Enviar <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+            </button>
+          </form>
+        </div>
+  
+        <!-- Mapa -->
+        <div class="col-md-6">
+          <h5 class="text-verde-lima mb-3">Ubicación</h5>
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4800164061124!2d-65.30530308472334!3d-24.18578628437281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b1e99f89ad42f%3A0x63f4fba4748ccbe9!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1713540031822!5m2!1ses-419!2sar"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación del gimnasio en San Salvador de Jujuy">
+            </iframe>
+          </div>        
+        </div>
+  
+      </div>
+  
+      <hr class="bg-verde-lima my-4">
+  
+      <!-- Redes -->
+      <div class="text-center">
+        <a href="https://www.facebook.com" class="text-verde-lima me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://www.instagram.com" class="text-verde-lima me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-verde-lima"><i class="fab fa-whatsapp fa-lg"></i></a>
+      </div>
+  
+      <p class="text-center mt-3 mb-0 small">© 2025 Gimnasio FitLife. Todos los derechos reservados.</p>
     </div>
   </footer>
-</body>
+  
+    <!-- Scripts al final del body -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/main.js"></script>
+  </body>
 </html>

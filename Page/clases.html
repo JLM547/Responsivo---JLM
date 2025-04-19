@@ -3,157 +3,312 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clases - Gimnasio Fuerte+</title>
-  <link rel="stylesheet" href="../Css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Gimnasio FitLife</title>
+  <link rel="website icon" type="png" href="Content/img/IconWebSite.png">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Icon libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@here-icons/all/css/here-icons.min.css" rel="stylesheet">
+
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="../Css/Style.css">
 </head>
 <body>
 
-   <!-- ===== HEADER CON MEGA MENÚ ===== -->
-   <header class="header">
-    <nav class="nav">
-        <!-- Logo del sitio -->
-        <div class="logo">
-            <a href="index.html">Fusión Gym</a>
-        </div>
+<!-- ========== Header con Mega Menú ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-negro py-3" role="navigation">
+  <div class="container">
+    <a class="navbar-brand text-verde-lima fw-bold" href="../index.html">Gimnasio FitLife</a>
 
-        <!-- Menú de navegación principal -->
-        <ul class="menu-principal">
-            <li><a href="../index.html">Inicio</a></li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMega" aria-controls="navbarMega" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <li><a href="entrenadores.html">Entrenadores</a></li>
-            <!-- Opción con mega-menú desplegable -->
-            <li class="mega-opcion">
-                <a href="#">Servicios ▾</a>
-
-                <!-- Mega-menú desplegable con subcategorías -->
-                <div class="mega-menu">
-                    <div class="mega-col">
-                        <h4>Clases</h4>
-                        <ul>
-                            <li><a href="clases.html#crossfit">CrossFit</a></li>
-                            <li><a href="clases.html#yoga">Yoga</a></li>
-                            <li><a href="clases.html#boxeo">Boxeo</a></li>
-                            <li><a href="clases.html">Ver mas</a></li>
-                        </ul>
-                    </div>
-                    <div class="mega-col">
-                        <h4>Precios</h4>
-                        <ul>
-                            <li><a href="precios.html#mensual">Mensual</a></li>
-                            <li><a href="precios.html#anual">Anual</a></li>
-                        </ul>
-                    </div>
+    <div class="collapse navbar-collapse" id="navbarMega">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-gris-claro" href="#" id="megaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Clases
+          </a>
+          <ul class="dropdown-menu mega-menu bg-gris-oscuro border-0 p-4 mt-2 shadow" aria-labelledby="megaDropdown">
+            <div class="row">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6 class="text-verde-lima">Destacadas Del Mes</h6>
+                  <a class="dropdown-item text-gris-claro" href="#">Funcional</a>
+                  <a class="dropdown-item text-gris-claro" href="#">Crossfit</a>
+                  <a class="dropdown-item text-gris-claro" href="#">Boxeo</a>
+                  <a class="dropdown-item text-gris-claro" href="#">Ver mas</a>
                 </div>
-            </li>
-
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<section class="filtro-clases">
-  <h1>Nuestras Clases</h1>
-
-  <div class="contenedor-filtro">
-    <!-- Mueve los inputs arriba para que estén antes de la galería -->
-    <input type="radio" name="categoria" id="todas" checked>
-    <input type="radio" name="categoria" id="fuerza">
-    <input type="radio" name="categoria" id="cardio">
-    <input type="radio" name="categoria" id="yoga">
-
-    <div class="filtros">
-      <label for="todas">Todas</label>
-      <label for="fuerza">Fuerza</label>
-      <label for="cardio">Cardio</label>
-      <label for="yoga">Yoga</label>
+                <div class="col-md-4">
+                  <h6 class="text-verde-lima">Precios</h6>
+                  <a class="dropdown-item text-gris-claro" href="Precios.html">Anual</a>
+                  <a class="dropdown-item text-gris-claro" href="Precios.html">Mensual</a>
+                  <a class="dropdown-item text-gris-claro" href="Precios.html">Ver mas</a>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gris-claro" href="entrenadores.html">Entrenadores</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-gris-claro" href="Blog.html">Blog Fitness</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link text-gris-claro" href="Contacto.html">Contacto</a>
+        </li>
+      </ul>
     </div>
+  </div>
+</nav>
 
-    <!-- Galería -->
-    <div class="galeria-clases">
-      <div class="clase fuerza">
-        <img src="../Content/img/FuerzaClases.jpg" alt="Clase de fuerza">
-        <div class="overlay">
-          <h3>Fuerza Total</h3>
-          <p>Construye músculo con pesas y entrenamiento funcional.</p>
-        </div>
+<!-- ================== FILTROS ================== -->
+<section class="py-5 bg-gris-medio text-center text-gris-claro">
+    <div class="container">
+      <h2 class="text-verde-lima mb-4">Filtrar por categoría</h2>
+  
+      <div class="mb-4">
+        <button class="btn btn-acento mx-2 filtro-btn" data-filtro="todos">Todas</button>
+        <button class="btn btn-outline-light mx-2 filtro-btn" data-filtro="funcional">Funcional</button>
+        <button class="btn btn-outline-light mx-2 filtro-btn" data-filtro="crossfit">Crossfit</button>
+        <button class="btn btn-outline-light mx-2 filtro-btn" data-filtro="boxeo">Boxeo</button>
       </div>
-      <div class="clase cardio">
-        <img src="../Content/img/cardiohitt.jpeg" alt="Clase de cardio">
-        <div class="overlay">
-          <h3>Cardio HIIT</h3>
-          <p>Sesiones intensas para quemar grasa rápidamente.</p>
-        </div>
+  
+      <!-- ========== Galería ========== -->
+      <div class="row" id="galeria-clases">
+
+        <!-- Tarjeta 1 -->
+<div class="col-md-4 mb-4 clase-card funcional">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/Nivel1.jpeg" class="card-img-top zoom-img" alt="Clase funcional">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
       </div>
-      <div class="clase yoga">
-        <img src="../Content/img/YogaClases.jpeg" alt="Clase de yoga">
-        <div class="overlay">
-          <h3>Yoga Flow</h3>
-          <p>Relaja tu mente y fortalece tu cuerpo.</p>
-        </div>
+      <div class="card-body">
+        <h5 class="card-title">Funcional Nivel 1</h5>
+        <p class="card-text">Entrenamiento integral para principiantes.</p>
       </div>
     </div>
   </div>
-</section>
-
-
-  <!-- ===== HORARIOS SEMANALES ===== -->
-  <section class="horarios">
-    <h2>Horarios Semanales</h2>
-    <div class="tabla-responsive">
-      <table>
-        <thead>
-          <tr>
-            <th>Día</th>
-            <th>Clase</th>
-            <th>Horario</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Lunes</td><td>Musculación</td><td>8:00 - 9:00</td></tr>
-          <tr><td>Martes</td><td>CrossFit</td><td>10:00 - 11:00</td></tr>
-          <tr><td>Miércoles</td><td>Yoga</td><td>9:00 - 10:00</td></tr>
-          <tr><td>Jueves</td><td>CrossFit</td><td>10:00 - 11:00</td></tr>
-          <tr><td>Viernes</td><td>Musculación</td><td>8:00 - 9:00</td></tr>
-          <tr><td>Sábado</td><td>Spinning</td><td>10:00 - 11:00</td></tr>
-        </tbody>
-      </table>
+  
+  <!-- Tarjeta 2 -->
+  <div class="col-md-4 mb-4 clase-card funcional">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/Nivel2.png" class="card-img-top zoom-img" alt="Funcional intermedio">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Funcional Intermedio</h5>
+        <p class="card-text">Mayor intensidad y circuitos dinámicos.</p>
+      </div>
     </div>
-    </section>
+  </div>
+  
+  <!-- Tarjeta 3 -->
+  <div class="col-md-4 mb-4 clase-card funcional">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/Nivel3.png" class="card-img-top zoom-img" alt="Funcional avanzado">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Funcional Avanzado</h5>
+        <p class="card-text">Desafíos de fuerza y resistencia.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- === Crossfit === -->
+  <div class="col-md-4 mb-4 clase-card crossfit">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/crosfit1.png" class="card-img-top zoom-img" alt="Crossfit básico">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Crossfit Iniciación</h5>
+        <p class="card-text">Técnicas básicas de movimientos funcionales.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 mb-4 clase-card crossfit">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/crosfit2.png" class="card-img-top zoom-img" alt="Crossfit intermedio">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Crossfit Intermedio</h5>
+        <p class="card-text">WODs personalizados para progresar.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 mb-4 clase-card crossfit">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/crosfit3.png" class="card-img-top zoom-img" alt="Crossfit avanzado">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Crossfit Avanzado</h5>
+        <p class="card-text">Alta intensidad para atletas experimentados.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- === Boxeo === -->
+  <div class="col-md-4 mb-4 clase-card boxeo">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/box1.jpg" class="card-img-top zoom-img" alt="Boxeo básico">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Boxeo Técnico</h5>
+        <p class="card-text">Golpes básicos y coordinación.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 mb-4 clase-card boxeo">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/box2.jpeg" class="card-img-top zoom-img" alt="Boxeo intermedio">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Boxeo Intermedio</h5>
+        <p class="card-text">Sparring controlado y combos avanzados.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-md-4 mb-4 clase-card boxeo">
+    <div class="card h-100 position-relative tarjeta-con-overlay">
+      <img src="../Content/img/box3.webp" class="card-img-top zoom-img" alt="Boxeo pro">
+      <div class="overlay-tarjeta d-flex align-items-center justify-content-center">
+        <a href="#" class="btn btn-verde-lima">Ver más</a>
+      </div>
+      <div class="card-body ">
+        <h5 class="card-title">Boxeo Avanzado</h5>
+        <p class="card-text">Tácticas defensivas y ofensivas.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+      </div>
+    </div>
+  </section>
 
-    <!-- ===== PIE DE PÁGINA / FOOTER ===== -->
-    <footer class="footer">
-        <div class="footer-contenedor">
-          
-          <!-- Formulario de Newsletter -->
-          <div class="footer-newsletter">
-            <h3>Suscríbete a nuestra pagina</h3>
-            <form>
-              <input type="email" placeholder="Tu correo electrónico" required>
-              <button type="submit">Suscribirme</button>
-            </form>
-          </div>
-      
-          <!-- Redes Sociales -->
-          <div class="redes-sociales">
-            <h3>Síguenos</h3>
-            <div class="iconos-redes">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  <!--Tabla de Horarios-->
+
+  <section class="py-5 bg-negro text-gris-claro">
+    <div class="container">
+      <h2 class="text-center text-verde-lima mb-4">Horarios de Clases</h2>
+  
+      <div class="table-responsive">
+        <table class="table table-dark table-striped table-bordered text-center align-middle">
+          <thead class="bg-gris-oscuro">
+            <tr>
+              <th>Día</th>
+              <th>Funcional</th>
+              <th>Crossfit</th>
+              <th>Boxeo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>08:00 - 09:00</td>
+              <td>10:00 - 11:00</td>
+              <td>17:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Miércoles</td>
+              <td>08:00 - 09:00</td>
+              <td>10:00 - 11:00</td>
+              <td>17:00 - 18:00</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>08:00 - 09:00</td>
+              <td>10:00 - 11:00</td>
+              <td>17:00 - 18:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- ========== Footer ========== -->
+<footer class="bg-azul-oscuro text-gris-claro pt-5 pb-4" aria-label="Pie de página del gimnasio">
+    <div class="container">
+      <div class="row g-4">
+  
+        <!-- Contacto -->
+        <div class="col-md-6">
+          <h5 class="text-verde-lima mb-3">Contacto</h5>
+          <form id="formContacto" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Ingresá un correo válido.</div>
+            </div>
+            <button type="submit" class="btn btn-verde-lima text-negro" id="btnEnviar">
+              Enviar <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+            </button>
+          </form>
         </div>
-      
-        <!-- Créditos -->
-        <div class="footer-creditos">
-          <p>&copy; 2025 Gimnasio Fuerte+. Todos los derechos reservados.</p>
+  
+        <!-- Mapa -->
+        <div class="col-md-6">
+          <h5 class="text-verde-lima mb-3">Ubicación</h5>
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4800164061124!2d-65.30530308472334!3d-24.18578628437281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b1e99f89ad42f%3A0x63f4fba4748ccbe9!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1713540031822!5m2!1ses-419!2sar"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación del gimnasio en San Salvador de Jujuy">
+            </iframe>
+          </div>        
         </div>
-      </footer>
-
-</body>
+  
+      </div>
+  
+      <hr class="bg-verde-lima my-4">
+  
+      <!-- Redes -->
+      <div class="text-center">
+        <a href="https://www.facebook.com" class="text-verde-lima me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://www.instagram.com" class="text-verde-lima me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-verde-lima"><i class="fab fa-whatsapp fa-lg"></i></a>
+      </div>
+  
+      <p class="text-center mt-3 mb-0 small">© 2025 Gimnasio FitLife. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+    <!-- Scripts al final del body -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/main.js"></script>
+  </body>
 </html>

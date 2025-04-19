@@ -1,153 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrenadores - Gimnasio Fuerte+</title>
-    <link rel="stylesheet" href="../Css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"       integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio FitLife</title>
+  <link rel="website icon" type="png" href="Content/img/IconWebSite.png">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Icon libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@here-icons/all/css/here-icons.min.css" rel="stylesheet">
+
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="../Css/Style.css">
+</head>
 <body>
 
-    <!-- ===== HEADER CON MEGA MENÚ ===== -->
-    <header class="header">
-        <nav class="nav">
-            <!-- Logo del sitio -->
-            <div class="logo">
-                <a href="index.html">Fusión Gym</a>
-            </div>
+<!-- ========== Header con Mega Menú ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-negro py-3" role="navigation">
+  <div class="container">
+    <a class="navbar-brand text-verde-lima fw-bold" href="../index.html">Gimnasio FitLife</a>
 
-            <!-- Menú de navegación principal -->
-            <ul class="menu-principal">
-                <li><a href="../index.html">Inicio</a></li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMega" aria-controls="navbarMega" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <li><a href="entrenadores.html">Entrenadores</a></li>
-                <!-- Opción con mega-menú desplegable -->
-                <li class="mega-opcion">
-                    <a href="#">Servicios ▾</a>
-
-                    <!-- Mega-menú desplegable con subcategorías -->
-                    <div class="mega-menu">
-                        <div class="mega-col">
-                            <h4>Clases</h4>
-                            <ul>
-                                <li><a href="clases.html#crossfit">CrossFit</a></li>
-                                <li><a href="clases.html#yoga">Yoga</a></li>
-                                <li><a href="clases.html#boxeo">Boxeo</a></li>
-                                <li><a href="clases.html">Ver mas</a></li>
-                            </ul>
-                        </div>
-                        <div class="mega-col">
-                            <h4>Precios</h4>
-                            <ul>
-                                <li><a href="precios.html#mensual">Mensual</a></li>
-                                <li><a href="precios.html#anual">Anual</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="precios">
-        <h1>Compará Nuestros Planes</h1>
-      
-        <!-- El input va aquí, ANTES de .planes-grid -->
-        <input type="checkbox" id="plan-toggle" hidden>
-      
-        <!-- Toggle mensual/anual -->
-        <div class="toggle-container">
-          <span>Mensual</span>
-          <label class="switch" for="plan-toggle">
-            <span class="slider"></span>
-          </label>
-          <span>Anual</span>
-        </div>
-      
-        <!-- Planes -->
-        <div class="planes-grid">
-          <!-- Plan Básico -->
-          <div class="plan-card">
-            <h3>Básico</h3>
-            <p class="precio mensual">$25/mes</p>
-            <p class="precio anual">$240/año</p>
-            <ul>
-              <li>Acceso al gimnasio</li>
-              <li class="tooltip">Clases grupales
-                <span class="tooltip-text">Incluye yoga, funcional y cardio</span>
-              </li>
-              <li>Locker individual</li>
-            </ul>
-            <button>Elegir</button>
-          </div>
-      
-          <!-- Plan Pro -->
-          <div class="plan-card destacado">
-            <h3>Pro</h3>
-            <p class="precio mensual">$40/mes</p>
-            <p class="precio anual">$400/año</p>
-            <ul>
-              <li>Todo en Básico</li>
-              <li class="tooltip">Entrenador personalizado
-                <span class="tooltip-text">1 sesión semanal incluida</span>
-              </li>
-              <li>Plan nutricional</li>
-            </ul>
-            <button>Elegir</button>
-          </div>
-      
-          <!-- Plan Ilimitado -->
-          <div class="plan-card">
-            <h3>Ilimitado</h3>
-            <p class="precio mensual">$60/mes</p>
-            <p class="precio anual">$600/año</p>
-            <ul>
-              <li>Todo en Pro</li>
-              <li>Acceso 24/7</li>
-              <li class="tooltip">Clases ilimitadas
-                <span class="tooltip-text">Incluye HIIT, box, pilates, etc.</span>
-              </li>
-            </ul>
-            <button>Elegir</button>
-          </div>
-        </div>
-      </section>
-      
-    <footer class="footer">
-        <div class="footer-contenedor">
-
-            <!-- Formulario de Newsletter -->
-            <div class="footer-newsletter">
-                <h3>Suscríbete a nuestra pagina</h3>
-                <form>
-                    <input type="email" placeholder="Tu correo electrónico" required>
-                    <button type="submit">Suscribirme</button>
-                </form>
-            </div>
-
-            <!-- Redes Sociales -->
-            <div class="redes-sociales">
-                <h3>Síguenos</h3>
-                <div class="iconos-redes">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <div class="collapse navbar-collapse" id="navbarMega">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-gris-claro" href="#" id="megaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Clases
+          </a>
+          <ul class="dropdown-menu mega-menu bg-gris-oscuro border-0 p-4 mt-2 shadow" aria-labelledby="megaDropdown">
+            <div class="row">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6 class="text-verde-lima">Destacadas Del Mes</h6>
+                  <a class="dropdown-item text-gris-claro" href="clases.html">Funcional</a>
+                  <a class="dropdown-item text-gris-claro" href="clases.html">Crossfit</a>
+                  <a class="dropdown-item text-gris-claro" href="clases.html">Boxeo</a>
+                  <a class="dropdown-item text-gris-claro" href="clases.html">Ver mas</a>
                 </div>
+                <div class="col-md-4">
+                  <h6 class="text-verde-lima">Precios</h6>
+                  <a class="dropdown-item text-gris-claro" href="#">Anual</a>
+                  <a class="dropdown-item text-gris-claro" href="#">Mensual</a>
+                  <a class="dropdown-item text-gris-claro" href="#">Ver mas</a>
+                </div>
+              </div>
             </div>
-        </div>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gris-claro" href="entrenadores.html">Entrenadores</a>
+        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-gris-claro" href="Blog.html">Blog Fitness</a>
+      </li>
+        <li class="nav-item">
+          <a class="nav-link text-gris-claro" href="Contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <!-- Créditos -->
-        <div class="footer-creditos">
-            <p>&copy; 2025 Gimnasio Fuerte+. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-</body>
+<section class="precios py-5 container">
+    <h2 class="text-center mb-4">Nuestros Planes</h2>
+  
+    <!-- Toggle Mensual / Anual -->
+    <div class="d-flex justify-content-center mb-4">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="togglePrecios">
+        <label class="form-check-label" for="togglePrecios">Ver precios anuales</label>
+      </div>
+    </div>
+  
+    <!-- Tabla de precios -->
+    <div class="table-responsive">
+      <table class="table table-hover text-center align-middle tabla-precios">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" class="text-verde-lima">Plan</th>
+            <th scope="col" data-bs-toggle="tooltip" title="Acceso completo al gimnasio" class="text-verde-lima">Acceso</th>
+            <th scope="col" data-bs-toggle="tooltip" title="Clases grupales diarias" class="text-verde-lima">Clases</th>
+            <th scope="col" data-bs-toggle="tooltip" title="Precio por mes o por año" class="text-verde-lima">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Básico</th>
+            <td>✓</td>
+            <td>✗</td>
+            <td class="precio" data-mensual="25" data-anual="250">$25</td>
+          </tr>
+          <tr>
+            <th scope="row">Intermedio</th>
+            <td>✓</td>
+            <td>✓</td>
+            <td class="precio" data-mensual="40" data-anual="400">$40</td>
+          </tr>
+          <tr class="tabla-recomendada">
+            <th scope="row">
+              Premium
+              <span class="badge badge-recomendado">
+                <i class="bi bi-star-fill"></i> Recomendado
+              </span>
+            </th>
+            <td>✓</td>
+            <td>✓ ilimitado</td>
+            <td class="precio" data-mensual="60" data-anual="600">$60</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+  
 
+<!-- ========== Footer ========== -->
+<footer class="bg-azul-oscuro text-gris-claro pt-5 pb-4" aria-label="Pie de página del gimnasio">
+    <div class="container">
+      <div class="row g-4">
+  
+        <!-- Contacto -->
+        <div class="col-md-6">
+          <h5 class="text-verde-lima mb-3">Contacto</h5>
+          <form id="formContacto" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">Por favor ingresá tu nombre.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Ingresá un correo válido.</div>
+            </div>
+            <button type="submit" class="btn btn-verde-lima text-negro" id="btnEnviar">
+              Enviar <span id="spinner" class="spinner-border spinner-border-sm d-none"></span>
+            </button>
+          </form>
+        </div>
+  
+        <!-- Mapa -->
+        <div class="col-md-6">
+          <h5 class="text-verde-lima mb-3">Ubicación</h5>
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.4800164061124!2d-65.30530308472334!3d-24.18578628437281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b1e99f89ad42f%3A0x63f4fba4748ccbe9!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1713540031822!5m2!1ses-419!2sar"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación del gimnasio en San Salvador de Jujuy">
+            </iframe>
+          </div>        
+        </div>
+  
+      </div>
+  
+      <hr class="bg-verde-lima my-4">
+  
+      <!-- Redes -->
+      <div class="text-center">
+        <a href="https://www.facebook.com" class="text-verde-lima me-3"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://www.instagram.com" class="text-verde-lima me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="text-verde-lima"><i class="fab fa-whatsapp fa-lg"></i></a>
+      </div>
+  
+      <p class="text-center mt-3 mb-0 small">© 2025 Gimnasio FitLife. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+    <!-- Scripts al final del body -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/main.js"></script>
+  </body>
 </html>
